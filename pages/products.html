@@ -3,50 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Taller Crotón - Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <header>
-        <div class="main-title">
-            <img src="../images/croton-logo.png" alt="" class="main-logo">
+<body class="text-center">
+    <header class="container">
+        <div>
+            <img src="../assets/croton-logo.png" alt="" class="main-logo">
             <h1>Taller Crotón</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="products.html">Productos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="about-us.html">Sobre nosotros</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navegación</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">Sobre nosotros</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Productos</h2>
-        <div class="product-list">
-            <div class="product">
-                <img src="../images/camino-de-mesa.jpg" alt="" class="product-img">
+        <h2 class="text-center p-5">Productos</h2>
+        <div class="product-list row m-5">
+            <div class="product col-md-6 col-lg-4 col-xl-3">
+                <img src="../assets/camino-de-mesa.jpg" alt="" class="product-img">
                 <div class="product-desc-preview">
                     <div class="product-name">Camino de mesa dorado</div>
                     <div class="product-price">$9000</div>
                 </div>
             </div>
-            <div class="product">
-                <img src="../images/jirafa.jpg" alt="" class="product-img">
+            <div class="product col-md-6 col-lg-4 col-xl-3">
+                <img src="../assets/jirafa.jpg" alt="" class="product-img">
                 <div class="product-desc-preview">
                     <div class="product-name">Peluche Jirafa</div>
                     <div class="product-price">$8000</div>
                 </div>
             </div>  
-            <div class="product">
-                <img src="../images/dinosaur.jpg" alt="" class="product-img">
+            <div class="product col-md-6 col-lg-4 col-xl-3">
+                <img src="../assets/dinosaur.jpg" alt="" class="product-img">
                 <div class="product-desc-preview">
                     <div class="product-name">Disfraz dinosaurio para perro pequeño<br>(no incluye perro)</div>
                     <div class="product-price">$12000</div>
                 </div>
             </div>
-            <div class="product">
+            <div class="product col-md-6 col-lg-4 col-xl-3">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Question_mark_%28black%29.svg">
                 <div class="product-desc-preview">
                     <div class="product-name">¡Pedido personalizado!</div>
@@ -55,9 +57,12 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="container text-center pt-3 m3">
         <p>Creado por Ricardo Padrón</p>
         <p>Powered by <a href="https://www.coderhouse.cl/">Coder House</a></p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

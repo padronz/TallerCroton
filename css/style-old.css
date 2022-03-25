@@ -1,0 +1,182 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(245, 245, 230, 0.5);
+    border-radius: 5px;
+    background-image: url("../images/dachshund-bg.png");
+    background-repeat: repeat;
+    background-size: 100%;
+}
+.main-logo {
+ height: 10em;
+}
+h1 {
+    font-size: 3em;
+}
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    border: 3px solid black;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    margin: 2px;
+}
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+.main-page {
+    margin-top: 50px
+}
+.entry > img {
+    height: 30em;
+    padding: 1.5em;
+}
+.artimg{
+    grid-area: img;
+}
+.article {
+    grid-area: article;
+}
+.entry {
+    display: grid;
+    gap: 10px;
+    border: solid 3px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "img  article article";
+    justify-items:first baseline;
+}
+.odd-item {
+    grid-template-areas:
+    "article article img";
+}
+.entry > div {
+    padding: 2em;
+}
+.odd-item {
+    flex-direction: row-reverse;
+}
+.product-list {
+    display: grid;
+    gap: 10px;
+    justify-items:first baseline;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.product {
+    padding: 1em;
+    border: solid 3px;
+    margin: 2em;
+    width: 24em;
+    display: flex;
+    flex-direction: column;
+    transition:cubic-bezier(0.55, 0.055, 0.675, 0.19) .1s;
+}
+.product:hover{
+    transform: rotateZ(5deg);
+}
+.product > * {
+    padding: .5em;
+}
+.product-img {
+    align-self: center; 
+    max-height: 20em;
+    max-width: 20em;
+}
+.product-name {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.product-price {
+    color: green    ;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    margin-top: 5em;
+}
+.formulario {
+    position: relative;
+    border: solid 3px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    left: 33%;
+}
+form > * {
+    padding: .5em
+}
+form > * {
+    display: flex;
+}
+form > * > label {
+    width: 100px;
+}
+.contain {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-self: center;
+padding: 10px;
+border: solid;
+border-radius: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+justify-content: center;
+}
+.contain > img {
+    align-self: center; 
+    max-width: 75%;
+    margin-bottom: 30px;
+}
+main {
+    text-align: center;
+}
+.animate {
+    animation: jiggle 100s infinite;
+}
+@keyframes jiggle {
+    50% {transform: rotate(10deg);}
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .entry {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+    }
+    .product-list {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .product-list > div {
+        width: auto;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+    }
+}
